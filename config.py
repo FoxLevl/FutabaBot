@@ -1,6 +1,10 @@
 #Stores important stuff
+from dotenv import load_dotenv
+import os
 
-DISCORD_TOKEN = "MTQ3NDEyODcyNDI0ODEwMDg4NA.Gy1kSg.qm5C0s1i5h5abg_d4bhiICej--jw-JJjOMbgN4"
-MAC_IP = '192.168.1.99'  
-PORT = '11434'
-MODEL_NAME = 'futababotv1'
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+MODEL_NAME = os.getenv("MODEL_NAME")
+MAC_IP = os.getenv("MAC_IP")
+PORT = os.getenv("PORT")
